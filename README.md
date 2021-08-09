@@ -139,7 +139,7 @@ As of LCD2USB version 1.4, download via usb with the [USBasp tool](http://www.fi
 
 To manually upload the firmware using the [usbasp](http://www.fischl.de/usbasp/) just use the follwing command:
 
-<pre>avrdude -c usbasp -p atmega8 -U lfuse:w:0x9f:m -U hfuse:w:0xc9:m -U flash:w:firmware-avrusb.hex
+<pre>avrdude -c usbasp -p atmega8 -U lfuse:w:0x9f:m -U hfuse:w:0xc9:m -U flash:w:firmware-avrusb.hex -B 10
 </pre>
 
 If your are familiar with a different AVR programming system you can of course use that one as well. But you'll probably have to do some minor adjustments in the Makefile.
